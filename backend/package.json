@@ -1,0 +1,26 @@
+{
+  "name": "certificate-verification-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Blockchain Certificate Verification System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@prisma/client": "5.18.0",
+    "axios": "^1.7.2",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.6.1",
+    "form-data": "^4.0.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^2.4.5",
+    "prisma": "5.18.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  }
+}

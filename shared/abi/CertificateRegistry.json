@@ -1,0 +1,656 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "admin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "admin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "certificateHash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "certificateId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "studentName",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "studentId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "institutionName",
+        "type": "string"
+      }
+    ],
+    "name": "CertificateIssued",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "certificateId",
+        "type": "string"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "versionNumber",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "CertificateReissued",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "certificateHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "CertificateRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "certificateHash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isValid",
+        "type": "bool"
+      }
+    ],
+    "name": "CertificateVerified",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      }
+    ],
+    "name": "addAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "admins",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_hash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getCertificateByHash",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "certificateId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "studentName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "studentId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "institutionName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "certificateTitle",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "course",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "grade",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "ipfsCID",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "issueDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "valid",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "versionNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "issuer",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_id",
+        "type": "string"
+      }
+    ],
+    "name": "getCertificateById",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "certificateId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "studentName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "studentId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "institutionName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "certificateTitle",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "course",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "grade",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "ipfsCID",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "issueDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "valid",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "versionNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "issuer",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_id",
+        "type": "string"
+      }
+    ],
+    "name": "getCertificateHistory",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "certificateId",
+            "type": "string"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "pdfHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "string",
+            "name": "ipfsCID",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "issueDate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "issuer",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "versionNumber",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "valid",
+            "type": "bool"
+          },
+          {
+            "internalType": "string",
+            "name": "studentName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "studentId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "institutionName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "certificateTitle",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "course",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "grade",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct CertificateRegistry.CertificateRecord[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "hashToId",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "hashToVersionIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_hash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "string",
+        "name": "_certificateId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_studentName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_studentId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_institutionName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_certificateTitle",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_course",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_grade",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_ipfsCID",
+        "type": "string"
+      }
+    ],
+    "name": "issueCertificate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_hash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "string",
+        "name": "_certificateId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_studentName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_studentId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_institutionName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_certificateTitle",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_course",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_grade",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_ipfsCID",
+        "type": "string"
+      }
+    ],
+    "name": "reissueCertificate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      }
+    ],
+    "name": "removeAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_hash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "revokeCertificate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_hash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "verifyCertificate",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

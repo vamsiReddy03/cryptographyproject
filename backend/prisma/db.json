@@ -1,0 +1,1262 @@
+{
+  "users": [
+    {
+      "id": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "createdAt": "2026-07-31T07:33:13.424Z",
+      "updatedAt": "2026-07-31T07:33:13.425Z",
+      "email": "superadmin@certichain.com",
+      "passwordHash": "008c70392e3abfbd0fa47bbc2ed96aa99bd49e159727fcba0f2e6abeb3a9d601",
+      "name": "System Super Admin",
+      "role": "SUPER_ADMIN",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "createdAt": "2026-07-31T07:33:13.432Z",
+      "updatedAt": "2026-07-31T07:33:13.432Z",
+      "email": "admin@cit.edu",
+      "passwordHash": "008c70392e3abfbd0fa47bbc2ed96aa99bd49e159727fcba0f2e6abeb3a9d601",
+      "name": "CIT Admin Staff",
+      "role": "INSTITUTE_ADMIN",
+      "instituteId": "e6bb4ecf-672c-4b81-9000-be0ee6ff53d5",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "1b2d429f-5a9d-479b-a97c-497edcfacc85",
+      "createdAt": "2026-07-31T07:33:13.434Z",
+      "updatedAt": "2026-07-31T07:33:13.434Z",
+      "email": "hod.cse@cit.edu",
+      "passwordHash": "008c70392e3abfbd0fa47bbc2ed96aa99bd49e159727fcba0f2e6abeb3a9d601",
+      "name": "Dr. Charles Xavier",
+      "role": "HOD",
+      "instituteId": "e6bb4ecf-672c-4b81-9000-be0ee6ff53d5",
+      "departmentId": "214d2073-8630-4315-93fb-1de0b2ae7277",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "createdAt": "2026-07-31T07:33:13.436Z",
+      "updatedAt": "2026-07-31T07:33:13.436Z",
+      "email": "faculty.cse@cit.edu",
+      "passwordHash": "008c70392e3abfbd0fa47bbc2ed96aa99bd49e159727fcba0f2e6abeb3a9d601",
+      "name": "Prof. Erik Lensherr",
+      "role": "FACULTY",
+      "instituteId": "e6bb4ecf-672c-4b81-9000-be0ee6ff53d5",
+      "departmentId": "214d2073-8630-4315-93fb-1de0b2ae7277",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "ad715332-4887-4819-9d5c-174e20b01d6e",
+      "createdAt": "2026-07-31T07:33:13.437Z",
+      "updatedAt": "2026-07-31T07:33:13.438Z",
+      "email": "student@cit.edu",
+      "passwordHash": "008c70392e3abfbd0fa47bbc2ed96aa99bd49e159727fcba0f2e6abeb3a9d601",
+      "name": "Logan Howlett",
+      "role": "STUDENT",
+      "instituteId": "e6bb4ecf-672c-4b81-9000-be0ee6ff53d5",
+      "departmentId": "214d2073-8630-4315-93fb-1de0b2ae7277",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "createdAt": "2026-07-31T08:10:37.409Z",
+      "updatedAt": "2026-07-31T08:10:37.409Z",
+      "email": "admin.rcoe@certichain.com",
+      "passwordHash": "7671a7be018d2f97b5615c404ed0518abfeba61b1b4c703f2e2a241b11b8b525",
+      "name": "Rizvi college of engineering Administrator",
+      "role": "INSTITUTE_ADMIN",
+      "instituteId": "5efcbb00-b49d-49b6-b47b-da8fd07a38eb",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "f15a9cbc-42f0-4358-919e-edc238561b1f",
+      "createdAt": "2026-07-31T08:13:11.333Z",
+      "updatedAt": "2026-07-31T08:13:11.333Z",
+      "email": "hod.cse@rcoe.edu",
+      "passwordHash": "008c70392e3abfbd0fa47bbc2ed96aa99bd49e159727fcba0f2e6abeb3a9d601",
+      "name": "junaid",
+      "role": "HOD",
+      "instituteId": "5efcbb00-b49d-49b6-b47b-da8fd07a38eb",
+      "departmentId": "29e631fe-d957-4b20-a4c5-1bd02a5c7fe6",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "946b8d4c-02d3-4145-8beb-5942921a9523",
+      "createdAt": "2026-07-31T08:13:53.709Z",
+      "updatedAt": "2026-07-31T08:13:53.709Z",
+      "email": "manila.cse@rcoe.edu",
+      "passwordHash": "008c70392e3abfbd0fa47bbc2ed96aa99bd49e159727fcba0f2e6abeb3a9d601",
+      "name": "Manila",
+      "role": "FACULTY",
+      "instituteId": "5efcbb00-b49d-49b6-b47b-da8fd07a38eb",
+      "departmentId": "29e631fe-d957-4b20-a4c5-1bd02a5c7fe6",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "d354aa9f-3615-4973-bf8c-5356263e2024",
+      "createdAt": "2026-07-31T08:16:36.148Z",
+      "updatedAt": "2026-07-31T08:16:36.148Z",
+      "email": "shubham@rcoe.edu",
+      "passwordHash": "008c70392e3abfbd0fa47bbc2ed96aa99bd49e159727fcba0f2e6abeb3a9d601",
+      "name": "Shubham madaye",
+      "role": "STUDENT",
+      "instituteId": "5efcbb00-b49d-49b6-b47b-da8fd07a38eb",
+      "departmentId": "29e631fe-d957-4b20-a4c5-1bd02a5c7fe6",
+      "status": "ACTIVE"
+    }
+  ],
+  "institutes": [
+    {
+      "id": "e6bb4ecf-672c-4b81-9000-be0ee6ff53d5",
+      "createdAt": "2026-07-31T07:33:13.428Z",
+      "updatedAt": "2026-07-31T07:33:13.428Z",
+      "name": "CertiChain Institute of Technology",
+      "code": "CIT",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "5efcbb00-b49d-49b6-b47b-da8fd07a38eb",
+      "createdAt": "2026-07-31T08:10:37.407Z",
+      "updatedAt": "2026-07-31T08:10:37.407Z",
+      "name": "Rizvi college of engineering",
+      "code": "rcoe",
+      "logoUrl": "",
+      "status": "ACTIVE"
+    }
+  ],
+  "departments": [
+    {
+      "id": "214d2073-8630-4315-93fb-1de0b2ae7277",
+      "createdAt": "2026-07-31T07:33:13.430Z",
+      "updatedAt": "2026-07-31T07:33:13.430Z",
+      "name": "Computer Science and Engineering",
+      "code": "CSE",
+      "instituteId": "e6bb4ecf-672c-4b81-9000-be0ee6ff53d5"
+    },
+    {
+      "id": "992353e6-ba9d-4683-9094-8d40140e4f96",
+      "createdAt": "2026-07-31T07:33:13.431Z",
+      "updatedAt": "2026-07-31T07:33:13.431Z",
+      "name": "Electronics and Communication",
+      "code": "ECE",
+      "instituteId": "e6bb4ecf-672c-4b81-9000-be0ee6ff53d5"
+    },
+    {
+      "id": "29e631fe-d957-4b20-a4c5-1bd02a5c7fe6",
+      "createdAt": "2026-07-31T08:12:41.099Z",
+      "updatedAt": "2026-07-31T08:12:41.099Z",
+      "name": "Computer Science and Engineering",
+      "code": "CSE",
+      "instituteId": "5efcbb00-b49d-49b6-b47b-da8fd07a38eb"
+    }
+  ],
+  "students": [
+    {
+      "id": "e561d454-bc1b-4b6f-a850-a452862596f6",
+      "createdAt": "2026-07-31T07:33:13.439Z",
+      "updatedAt": "2026-07-31T07:33:13.439Z",
+      "rollNumber": "CIT-CSE-2026-001",
+      "userId": "ad715332-4887-4819-9d5c-174e20b01d6e",
+      "departmentId": "214d2073-8630-4315-93fb-1de0b2ae7277",
+      "walletAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+    },
+    {
+      "id": "57c9b6bd-fca5-4c5a-abee-ac247505e25c",
+      "createdAt": "2026-07-31T08:16:36.150Z",
+      "updatedAt": "2026-07-31T08:16:36.150Z",
+      "rollNumber": "231P019",
+      "userId": "d354aa9f-3615-4973-bf8c-5356263e2024",
+      "departmentId": "29e631fe-d957-4b20-a4c5-1bd02a5c7fe6",
+      "walletAddress": null
+    }
+  ],
+  "certificates": [
+    {
+      "id": "273a0bf2-22db-4be4-a84a-16e2be43a721",
+      "createdAt": "2026-07-31T08:17:17.732Z",
+      "updatedAt": "2026-07-31T08:42:35.001Z",
+      "certificateId": "CER-837731-750",
+      "currentVersion": 1,
+      "status": "PRINCIPAL_APPROVED",
+      "studentId": "57c9b6bd-fca5-4c5a-abee-ac247505e25c",
+      "issuerId": "946b8d4c-02d3-4145-8beb-5942921a9523",
+      "hodId": "f15a9cbc-42f0-4358-919e-edc238561b1f",
+      "principalId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b"
+    },
+    {
+      "id": "1f52ce3e-98f4-4455-87ae-4b394ca40cc5",
+      "createdAt": "2026-07-31T08:53:25.562Z",
+      "updatedAt": "2026-07-31T09:41:13.856Z",
+      "certificateId": "CER-005562-534",
+      "currentVersion": 1,
+      "status": "ISSUED",
+      "studentId": "e561d454-bc1b-4b6f-a850-a452862596f6",
+      "issuerId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "hodId": "1b2d429f-5a9d-479b-a97c-497edcfacc85",
+      "principalId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8"
+    }
+  ],
+  "certificateVersions": [
+    {
+      "id": "e7573725-be65-49e8-a6d9-c7d5f5797dd4",
+      "createdAt": "2026-07-31T08:17:17.733Z",
+      "updatedAt": "2026-07-31T08:17:17.733Z",
+      "certificateId": "273a0bf2-22db-4be4-a84a-16e2be43a721",
+      "versionNumber": 1,
+      "pdfHash": "DRAFT_HASH_273a0bf2-22db-4be4-a84a-16e2be43a721",
+      "ipfsCID": "DRAFT_CID",
+      "studentName": "Shubham madaye",
+      "studentRollNo": "231P019",
+      "courseName": "Computer Science & Eng",
+      "grade": "A+",
+      "remarks": "Draft created",
+      "createdById": "946b8d4c-02d3-4145-8beb-5942921a9523",
+      "status": "ISSUED"
+    },
+    {
+      "id": "3607da83-4432-4d7b-9d24-b357c044f048",
+      "createdAt": "2026-07-31T08:53:25.564Z",
+      "updatedAt": "2026-07-31T09:41:13.847Z",
+      "certificateId": "1f52ce3e-98f4-4455-87ae-4b394ca40cc5",
+      "versionNumber": 1,
+      "pdfHash": "0x742ec98cda71fe1f198f0098dcb0c58d6d59249f630ebb4d37076bef13a40701",
+      "ipfsCID": "QmMock344e15b677adfbbc6caaff9dc09a730dfe7e",
+      "studentName": "Logan Howlett",
+      "studentRollNo": "CIT-CSE-2026-001",
+      "courseName": "Computer Science & Eng",
+      "grade": "A+",
+      "remarks": "Draft created",
+      "createdById": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "status": "ISSUED",
+      "txHash": "0x2be7c33820afceeeb7acd18671b10a01e4b6ef92eff568256ddcde2521591478",
+      "blockNumber": 19828262,
+      "gasUsed": "42105",
+      "walletAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "issueDate": "2026-07-31T09:41:13.846Z"
+    }
+  ],
+  "approvals": [
+    {
+      "id": "7f55e077-a88e-46e3-984f-7d9cd37442ae",
+      "createdAt": "2026-07-31T08:17:21.656Z",
+      "updatedAt": "2026-07-31T08:17:54.096Z",
+      "certificateId": "273a0bf2-22db-4be4-a84a-16e2be43a721",
+      "stage": "HOD",
+      "status": "APPROVED",
+      "actionById": "f15a9cbc-42f0-4358-919e-edc238561b1f",
+      "comments": ""
+    },
+    {
+      "id": "e0aaf83e-c4ed-46ea-b7b2-8348de0dcafd",
+      "createdAt": "2026-07-31T08:17:54.099Z",
+      "updatedAt": "2026-07-31T08:42:34.996Z",
+      "certificateId": "273a0bf2-22db-4be4-a84a-16e2be43a721",
+      "stage": "PRINCIPAL",
+      "status": "APPROVED",
+      "actionById": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "comments": ""
+    },
+    {
+      "id": "cc9cbf6a-26c5-416e-a3ff-2b78abd01488",
+      "createdAt": "2026-07-31T08:53:29.370Z",
+      "updatedAt": "2026-07-31T09:03:13.329Z",
+      "certificateId": "1f52ce3e-98f4-4455-87ae-4b394ca40cc5",
+      "stage": "HOD",
+      "status": "APPROVED",
+      "actionById": "1b2d429f-5a9d-479b-a97c-497edcfacc85",
+      "comments": ""
+    },
+    {
+      "id": "7b16a650-799d-4999-bb32-362bef7e1f85",
+      "createdAt": "2026-07-31T09:03:13.331Z",
+      "updatedAt": "2026-07-31T09:03:22.831Z",
+      "certificateId": "1f52ce3e-98f4-4455-87ae-4b394ca40cc5",
+      "stage": "PRINCIPAL",
+      "status": "APPROVED",
+      "actionById": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "comments": ""
+    }
+  ],
+  "verificationLogs": [
+    {
+      "id": "c7d1740b-79e8-422f-b40f-c0c1c41594c1",
+      "createdAt": "2026-07-31T08:43:40.350Z",
+      "updatedAt": "2026-07-31T08:43:40.350Z",
+      "certificateId": null,
+      "certificateVersionId": null,
+      "result": "INVALID",
+      "verificationMethod": "PDF_UPLOAD",
+      "txHashChecked": "0x066a75b4d6c9132c53b980f9441fdbe8d9fdf6de0bda71d5676cf4d328f12bd3",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "eb9e1e3a-8024-4917-86a0-bb742631ca50",
+      "createdAt": "2026-07-31T08:43:44.590Z",
+      "updatedAt": "2026-07-31T08:43:44.590Z",
+      "certificateId": null,
+      "certificateVersionId": null,
+      "result": "INVALID",
+      "verificationMethod": "ID",
+      "txHashChecked": null,
+      "ipAddress": "::1"
+    }
+  ],
+  "blockchainTransactions": [
+    {
+      "id": "aa41fbe0-c910-47d3-b80f-618337efecc2",
+      "createdAt": "2026-07-31T09:41:13.858Z",
+      "updatedAt": "2026-07-31T09:41:13.858Z",
+      "txHash": "0x2be7c33820afceeeb7acd18671b10a01e4b6ef92eff568256ddcde2521591478",
+      "action": "ISSUE",
+      "blockNumber": 19828262,
+      "gasUsed": "42105",
+      "status": "SUCCESS",
+      "walletAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "certificateId": "1f52ce3e-98f4-4455-87ae-4b394ca40cc5",
+      "certificateVersionId": "3607da83-4432-4d7b-9d24-b357c044f048"
+    }
+  ],
+  "applicationTransactions": [
+    {
+      "id": "7efdc684-dbe3-432d-b8e8-fffc0a27ceea",
+      "createdAt": "2026-07-31T08:08:46.844Z",
+      "updatedAt": "2026-07-31T08:08:46.844Z",
+      "action": "LOGIN",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "status": "SUCCESS",
+      "details": "User logged in: superadmin@certichain.com (SUPER_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "d7fdd572-049e-4156-a762-c75bd3eb24fd",
+      "createdAt": "2026-07-31T08:09:01.995Z",
+      "updatedAt": "2026-07-31T08:09:01.995Z",
+      "action": "LOGOUT",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "f4a8d8c1-bb82-40be-a233-25cbe1c4ed05",
+      "createdAt": "2026-07-31T08:09:04.568Z",
+      "updatedAt": "2026-07-31T08:09:04.568Z",
+      "action": "LOGIN",
+      "userId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "status": "SUCCESS",
+      "details": "User logged in: admin@cit.edu (INSTITUTE_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "c0d3d13e-a195-45f4-97b2-28786055cfe9",
+      "createdAt": "2026-07-31T08:09:06.575Z",
+      "updatedAt": "2026-07-31T08:09:06.575Z",
+      "action": "LOGOUT",
+      "userId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "1d15ba8a-f8cc-498e-98ca-3655deb87ea3",
+      "createdAt": "2026-07-31T08:09:09.162Z",
+      "updatedAt": "2026-07-31T08:09:09.162Z",
+      "action": "LOGIN",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "status": "SUCCESS",
+      "details": "User logged in: faculty.cse@cit.edu (FACULTY)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "45c4cbe8-ab27-4067-b2b2-8a15180a9624",
+      "createdAt": "2026-07-31T08:09:21.233Z",
+      "updatedAt": "2026-07-31T08:09:21.233Z",
+      "action": "LOGOUT",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "957d5663-99fb-4b14-b4a5-3db25279857c",
+      "createdAt": "2026-07-31T08:09:26.067Z",
+      "updatedAt": "2026-07-31T08:09:26.067Z",
+      "action": "LOGIN",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "status": "SUCCESS",
+      "details": "User logged in: superadmin@certichain.com (SUPER_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "94e615e1-53b1-46c1-b5df-d248540bedab",
+      "createdAt": "2026-07-31T08:09:33.972Z",
+      "updatedAt": "2026-07-31T08:09:33.972Z",
+      "action": "LOGOUT",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "fc429eee-4cb8-4f18-a294-2ccc2df31222",
+      "createdAt": "2026-07-31T08:10:13.218Z",
+      "updatedAt": "2026-07-31T08:10:13.218Z",
+      "action": "LOGIN",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "status": "SUCCESS",
+      "details": "User logged in: superadmin@certichain.com (SUPER_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "e68089fd-e2b0-447a-808d-40be662a44ad",
+      "createdAt": "2026-07-31T08:11:27.374Z",
+      "updatedAt": "2026-07-31T08:11:27.374Z",
+      "action": "LOGOUT",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "e4e0b4f6-11b7-4268-b451-6e3f507f17a5",
+      "createdAt": "2026-07-31T08:11:56.967Z",
+      "updatedAt": "2026-07-31T08:11:56.967Z",
+      "action": "LOGIN",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "status": "SUCCESS",
+      "details": "User logged in: admin.rcoe@certichain.com (INSTITUTE_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "ac4acb32-3ec7-48a8-821c-8e0d322ebb53",
+      "createdAt": "2026-07-31T08:14:03.991Z",
+      "updatedAt": "2026-07-31T08:14:03.991Z",
+      "action": "LOGOUT",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "270a5bac-355c-4828-bce0-8886f0371d67",
+      "createdAt": "2026-07-31T08:14:37.938Z",
+      "updatedAt": "2026-07-31T08:14:37.938Z",
+      "action": "LOGIN",
+      "userId": "946b8d4c-02d3-4145-8beb-5942921a9523",
+      "status": "SUCCESS",
+      "details": "User logged in: manila.cse@rcoe.edu (FACULTY)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "32ebfe38-8ca7-462e-890b-ca87c2915526",
+      "createdAt": "2026-07-31T08:15:04.781Z",
+      "updatedAt": "2026-07-31T08:15:04.781Z",
+      "action": "LOGOUT",
+      "userId": "946b8d4c-02d3-4145-8beb-5942921a9523",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "38cab2e2-032a-42ff-83f9-fe1f31133c52",
+      "createdAt": "2026-07-31T08:15:34.268Z",
+      "updatedAt": "2026-07-31T08:15:34.268Z",
+      "action": "LOGIN",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "status": "SUCCESS",
+      "details": "User logged in: admin.rcoe@certichain.com (INSTITUTE_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "f2a58d92-7bb6-4f41-bc25-23e7ac06cec3",
+      "createdAt": "2026-07-31T08:16:42.040Z",
+      "updatedAt": "2026-07-31T08:16:42.040Z",
+      "action": "LOGOUT",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "2be7469c-ad35-4584-bf01-196eede33869",
+      "createdAt": "2026-07-31T08:16:48.362Z",
+      "updatedAt": "2026-07-31T08:16:48.362Z",
+      "action": "LOGIN",
+      "userId": "ad715332-4887-4819-9d5c-174e20b01d6e",
+      "status": "SUCCESS",
+      "details": "User logged in: student@cit.edu (STUDENT)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "4f73e925-b2c3-471d-b8e1-6d13170773b3",
+      "createdAt": "2026-07-31T08:16:53.895Z",
+      "updatedAt": "2026-07-31T08:16:53.895Z",
+      "action": "LOGOUT",
+      "userId": "ad715332-4887-4819-9d5c-174e20b01d6e",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "8353530e-82d6-4c31-a52d-5aae2675f089",
+      "createdAt": "2026-07-31T08:17:09.828Z",
+      "updatedAt": "2026-07-31T08:17:09.828Z",
+      "action": "LOGIN",
+      "userId": "946b8d4c-02d3-4145-8beb-5942921a9523",
+      "status": "SUCCESS",
+      "details": "User logged in: manila.cse@rcoe.edu (FACULTY)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "64acab48-fc7a-41e3-811c-f9e7e4a638ca",
+      "createdAt": "2026-07-31T08:17:30.568Z",
+      "updatedAt": "2026-07-31T08:17:30.568Z",
+      "action": "LOGOUT",
+      "userId": "946b8d4c-02d3-4145-8beb-5942921a9523",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "210f7ed2-cd8c-4953-a716-f3ba6d5b25dc",
+      "createdAt": "2026-07-31T08:17:46.442Z",
+      "updatedAt": "2026-07-31T08:17:46.442Z",
+      "action": "LOGIN",
+      "userId": "f15a9cbc-42f0-4358-919e-edc238561b1f",
+      "status": "SUCCESS",
+      "details": "User logged in: hod.cse@rcoe.edu (HOD)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "f6f0a957-e567-4729-bd68-9e9bca9cf1be",
+      "createdAt": "2026-07-31T08:17:58.756Z",
+      "updatedAt": "2026-07-31T08:17:58.756Z",
+      "action": "LOGOUT",
+      "userId": "f15a9cbc-42f0-4358-919e-edc238561b1f",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "69f358a0-7157-496b-bb13-3cdfea1f90cd",
+      "createdAt": "2026-07-31T08:23:37.251Z",
+      "updatedAt": "2026-07-31T08:23:37.251Z",
+      "action": "LOGIN",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "status": "SUCCESS",
+      "details": "User logged in: superadmin@certichain.com (SUPER_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "2396189c-4809-461d-99d1-9552ff8e0b80",
+      "createdAt": "2026-07-31T08:23:53.406Z",
+      "updatedAt": "2026-07-31T08:23:53.406Z",
+      "action": "LOGOUT",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "bc0080db-42bf-4d45-9c28-042e51610ecd",
+      "createdAt": "2026-07-31T08:24:17.420Z",
+      "updatedAt": "2026-07-31T08:24:17.420Z",
+      "action": "LOGIN",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "status": "SUCCESS",
+      "details": "User logged in: admin.rcoe@certichain.com (INSTITUTE_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "4bf900fd-0db3-4eb6-8fbd-6862b35227de",
+      "createdAt": "2026-07-31T08:24:37.846Z",
+      "updatedAt": "2026-07-31T08:24:37.846Z",
+      "action": "LOGOUT",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "54267d9f-3c00-46d3-847c-e7a25f5aed86",
+      "createdAt": "2026-07-31T08:24:55.553Z",
+      "updatedAt": "2026-07-31T08:24:55.553Z",
+      "action": "LOGIN",
+      "userId": "f15a9cbc-42f0-4358-919e-edc238561b1f",
+      "status": "SUCCESS",
+      "details": "User logged in: hod.cse@rcoe.edu (HOD)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "375b7aae-4732-4e7b-a73d-caca0ce21788",
+      "createdAt": "2026-07-31T08:25:54.573Z",
+      "updatedAt": "2026-07-31T08:25:54.573Z",
+      "action": "LOGOUT",
+      "userId": "f15a9cbc-42f0-4358-919e-edc238561b1f",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "72b347ef-77c2-463e-9aa0-b272260fa840",
+      "createdAt": "2026-07-31T08:25:59.888Z",
+      "updatedAt": "2026-07-31T08:25:59.888Z",
+      "action": "LOGIN",
+      "userId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "status": "SUCCESS",
+      "details": "User logged in: admin@cit.edu (INSTITUTE_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "6802f656-e51a-4430-9c2e-0a26e90e48bd",
+      "createdAt": "2026-07-31T08:26:06.000Z",
+      "updatedAt": "2026-07-31T08:26:06.000Z",
+      "action": "LOGOUT",
+      "userId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "21893aff-9eaa-4a45-9946-8315efce391f",
+      "createdAt": "2026-07-31T08:26:14.153Z",
+      "updatedAt": "2026-07-31T08:26:14.153Z",
+      "action": "LOGIN",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "status": "SUCCESS",
+      "details": "User logged in: superadmin@certichain.com (SUPER_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "fcfd7fde-9f94-4e19-9d26-d35f18c2ffb6",
+      "createdAt": "2026-07-31T08:26:34.161Z",
+      "updatedAt": "2026-07-31T08:26:34.161Z",
+      "action": "LOGOUT",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "c5af14fb-a96b-49a6-90a0-13f9261683e5",
+      "createdAt": "2026-07-31T08:26:41.429Z",
+      "updatedAt": "2026-07-31T08:26:41.429Z",
+      "action": "LOGIN",
+      "userId": "d354aa9f-3615-4973-bf8c-5356263e2024",
+      "status": "SUCCESS",
+      "details": "User logged in: shubham@rcoe.edu (STUDENT)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "26b7265c-93c8-4b4c-b004-a70c5e73e713",
+      "createdAt": "2026-07-31T08:26:53.614Z",
+      "updatedAt": "2026-07-31T08:26:53.614Z",
+      "action": "LOGOUT",
+      "userId": "d354aa9f-3615-4973-bf8c-5356263e2024",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "7bc583e1-22da-4808-ad46-30ce43544a4f",
+      "createdAt": "2026-07-31T08:27:30.013Z",
+      "updatedAt": "2026-07-31T08:27:30.013Z",
+      "action": "LOGIN",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "status": "SUCCESS",
+      "details": "User logged in: admin.rcoe@certichain.com (INSTITUTE_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "fbd5afbc-5cc8-44bc-aaad-8d4f234955d2",
+      "createdAt": "2026-07-31T08:31:22.930Z",
+      "updatedAt": "2026-07-31T08:31:22.930Z",
+      "action": "LOGOUT",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "0e7501a2-a4e8-4427-bf6b-7da1cc553831",
+      "createdAt": "2026-07-31T08:34:13.486Z",
+      "updatedAt": "2026-07-31T08:34:13.486Z",
+      "action": "LOGIN",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "status": "SUCCESS",
+      "details": "User logged in: admin.rcoe@certichain.com (INSTITUTE_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "88070f11-03a5-49fd-974c-3621ac4716c2",
+      "createdAt": "2026-07-31T08:40:44.183Z",
+      "updatedAt": "2026-07-31T08:40:44.183Z",
+      "action": "LOGOUT",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "12b18d87-04b3-47c4-99ff-64a25d824ee0",
+      "createdAt": "2026-07-31T08:40:50.779Z",
+      "updatedAt": "2026-07-31T08:40:50.779Z",
+      "action": "LOGIN",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "status": "SUCCESS",
+      "details": "User logged in: superadmin@certichain.com (SUPER_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "58c919f0-2760-4266-abb0-6162b012e933",
+      "createdAt": "2026-07-31T08:41:03.461Z",
+      "updatedAt": "2026-07-31T08:41:03.461Z",
+      "action": "LOGOUT",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "bee0cbd0-aaad-4de7-9ecf-8d6aeecc4839",
+      "createdAt": "2026-07-31T08:41:25.107Z",
+      "updatedAt": "2026-07-31T08:41:25.107Z",
+      "action": "LOGIN",
+      "userId": "f15a9cbc-42f0-4358-919e-edc238561b1f",
+      "status": "SUCCESS",
+      "details": "User logged in: hod.cse@rcoe.edu (HOD)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "ce84508d-30ff-4305-8aca-4cce2b6a4e72",
+      "createdAt": "2026-07-31T08:42:02.110Z",
+      "updatedAt": "2026-07-31T08:42:02.110Z",
+      "action": "LOGOUT",
+      "userId": "f15a9cbc-42f0-4358-919e-edc238561b1f",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "7123ba92-1ec2-4cbd-8e33-276f1f7edee3",
+      "createdAt": "2026-07-31T08:42:21.403Z",
+      "updatedAt": "2026-07-31T08:42:21.403Z",
+      "action": "LOGIN",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "status": "SUCCESS",
+      "details": "User logged in: admin.rcoe@certichain.com (INSTITUTE_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "4dcff11b-80b7-448b-8fe3-bb331f5ab580",
+      "createdAt": "2026-07-31T08:45:23.187Z",
+      "updatedAt": "2026-07-31T08:45:23.187Z",
+      "action": "LOGOUT",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "ee22178d-67f5-4e13-99cc-95ffcaaa9fa1",
+      "createdAt": "2026-07-31T08:45:26.913Z",
+      "updatedAt": "2026-07-31T08:45:26.913Z",
+      "action": "LOGIN",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "status": "SUCCESS",
+      "details": "User logged in: faculty.cse@cit.edu (FACULTY)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "bf8acfc4-e867-4c91-9c34-8037c79a52ad",
+      "createdAt": "2026-07-31T08:52:39.495Z",
+      "updatedAt": "2026-07-31T08:52:39.495Z",
+      "action": "LOGOUT",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "ab9d11b8-ef1e-4098-8fbb-60a78d532937",
+      "createdAt": "2026-07-31T08:52:43.384Z",
+      "updatedAt": "2026-07-31T08:52:43.384Z",
+      "action": "LOGIN",
+      "userId": "ad715332-4887-4819-9d5c-174e20b01d6e",
+      "status": "SUCCESS",
+      "details": "User logged in: student@cit.edu (STUDENT)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "44781907-125b-4059-9373-45e239143ab7",
+      "createdAt": "2026-07-31T08:52:57.190Z",
+      "updatedAt": "2026-07-31T08:52:57.190Z",
+      "action": "LOGOUT",
+      "userId": "ad715332-4887-4819-9d5c-174e20b01d6e",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "b6568365-7a24-4cfd-acd8-8ca7b71f825b",
+      "createdAt": "2026-07-31T08:53:02.437Z",
+      "updatedAt": "2026-07-31T08:53:02.437Z",
+      "action": "LOGIN",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "status": "SUCCESS",
+      "details": "User logged in: faculty.cse@cit.edu (FACULTY)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "7af5d8e9-d17c-4e0e-b702-b907203957fa",
+      "createdAt": "2026-07-31T09:03:04.821Z",
+      "updatedAt": "2026-07-31T09:03:04.821Z",
+      "action": "LOGOUT",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "bf546f19-7995-4aaa-b4e4-090dd3f9231c",
+      "createdAt": "2026-07-31T09:03:08.526Z",
+      "updatedAt": "2026-07-31T09:03:08.526Z",
+      "action": "LOGIN",
+      "userId": "1b2d429f-5a9d-479b-a97c-497edcfacc85",
+      "status": "SUCCESS",
+      "details": "User logged in: hod.cse@cit.edu (HOD)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "4c1d3f20-8240-4c3d-8ed6-523a36de55f3",
+      "createdAt": "2026-07-31T09:03:16.326Z",
+      "updatedAt": "2026-07-31T09:03:16.326Z",
+      "action": "LOGOUT",
+      "userId": "1b2d429f-5a9d-479b-a97c-497edcfacc85",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "6736306b-190f-457a-95dc-5e99ccf95822",
+      "createdAt": "2026-07-31T09:03:19.547Z",
+      "updatedAt": "2026-07-31T09:03:19.547Z",
+      "action": "LOGIN",
+      "userId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "status": "SUCCESS",
+      "details": "User logged in: admin@cit.edu (INSTITUTE_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "04289274-d70b-4531-a15f-e4b1dd79ded9",
+      "createdAt": "2026-07-31T09:03:34.156Z",
+      "updatedAt": "2026-07-31T09:03:34.156Z",
+      "action": "LOGOUT",
+      "userId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "a3737920-e82a-4f9d-a748-d794dbbd2b91",
+      "createdAt": "2026-07-31T09:03:37.648Z",
+      "updatedAt": "2026-07-31T09:03:37.648Z",
+      "action": "LOGIN",
+      "userId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "status": "SUCCESS",
+      "details": "User logged in: admin@cit.edu (INSTITUTE_ADMIN)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "495f2698-2b73-4266-9b37-07749d336be9",
+      "createdAt": "2026-07-31T09:09:23.746Z",
+      "updatedAt": "2026-07-31T09:09:23.746Z",
+      "action": "LOGOUT",
+      "userId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "60e902a9-47ee-448e-a3e2-fadefa715a6c",
+      "createdAt": "2026-07-31T09:09:26.793Z",
+      "updatedAt": "2026-07-31T09:09:26.793Z",
+      "action": "LOGIN",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "status": "SUCCESS",
+      "details": "User logged in: faculty.cse@cit.edu (FACULTY)",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "969677ea-8bb9-471d-8236-4191b13b7c19",
+      "createdAt": "2026-07-31T09:41:39.069Z",
+      "updatedAt": "2026-07-31T09:41:39.069Z",
+      "action": "LOGOUT",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "status": "SUCCESS",
+      "details": "User logged out",
+      "ipAddress": "::1"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "57a6320c-e77e-4d77-b2f5-ccb84a2ce555",
+      "createdAt": "2026-07-31T08:08:46.845Z",
+      "updatedAt": "2026-07-31T08:08:46.845Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: superadmin@certichain.com",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "3eb8db69-bb18-419e-9964-f88e0f46dccb",
+      "createdAt": "2026-07-31T08:09:04.570Z",
+      "updatedAt": "2026-07-31T08:09:04.570Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: admin@cit.edu",
+      "userId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "0ea1b648-9346-41d1-b17e-f3e7556a5344",
+      "createdAt": "2026-07-31T08:09:09.164Z",
+      "updatedAt": "2026-07-31T08:09:09.164Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: faculty.cse@cit.edu",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "8ce6648a-39c2-4f6f-8dff-b2eaf84b067c",
+      "createdAt": "2026-07-31T08:09:26.068Z",
+      "updatedAt": "2026-07-31T08:09:26.068Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: superadmin@certichain.com",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "8e6e3dbe-3483-4bdb-826a-0a71b29886e3",
+      "createdAt": "2026-07-31T08:10:13.219Z",
+      "updatedAt": "2026-07-31T08:10:13.219Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: superadmin@certichain.com",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "84486462-3106-443a-8ed9-f791471e647c",
+      "createdAt": "2026-07-31T08:11:56.969Z",
+      "updatedAt": "2026-07-31T08:11:56.969Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: admin.rcoe@certichain.com",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "e48fdb3e-9cac-42e1-98d5-48301a861a33",
+      "createdAt": "2026-07-31T08:13:11.334Z",
+      "updatedAt": "2026-07-31T08:13:11.334Z",
+      "action": "CREATE_USER",
+      "details": "Created user hod.cse@rcoe.edu with role HOD",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b"
+    },
+    {
+      "id": "e5f88e8c-b54a-4f7e-8fef-9fb22a77c974",
+      "createdAt": "2026-07-31T08:13:53.711Z",
+      "updatedAt": "2026-07-31T08:13:53.711Z",
+      "action": "CREATE_USER",
+      "details": "Created user manila.cse@rcoe.edu with role FACULTY",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b"
+    },
+    {
+      "id": "3874233e-c428-49cb-87d3-f8c4aa79aac0",
+      "createdAt": "2026-07-31T08:14:37.940Z",
+      "updatedAt": "2026-07-31T08:14:37.940Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: manila.cse@rcoe.edu",
+      "userId": "946b8d4c-02d3-4145-8beb-5942921a9523",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "56f1b6ca-61aa-41bb-9727-2409c2077058",
+      "createdAt": "2026-07-31T08:15:34.269Z",
+      "updatedAt": "2026-07-31T08:15:34.269Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: admin.rcoe@certichain.com",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "0aa14049-81c8-4b8f-aabd-2e4ec47fd554",
+      "createdAt": "2026-07-31T08:16:36.152Z",
+      "updatedAt": "2026-07-31T08:16:36.152Z",
+      "action": "CREATE_USER",
+      "details": "Created user shubham@rcoe.edu with role STUDENT",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b"
+    },
+    {
+      "id": "a2d2b3c2-6841-48a2-bb72-06d85ad4eb8d",
+      "createdAt": "2026-07-31T08:16:48.363Z",
+      "updatedAt": "2026-07-31T08:16:48.363Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: student@cit.edu",
+      "userId": "ad715332-4887-4819-9d5c-174e20b01d6e",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "a2f8e8b4-0f78-4e2b-a24f-08b0de661466",
+      "createdAt": "2026-07-31T08:17:09.830Z",
+      "updatedAt": "2026-07-31T08:17:09.830Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: manila.cse@rcoe.edu",
+      "userId": "946b8d4c-02d3-4145-8beb-5942921a9523",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "cc70059b-2d3f-4d6f-af76-9613d2427191",
+      "createdAt": "2026-07-31T08:17:17.735Z",
+      "updatedAt": "2026-07-31T08:17:17.735Z",
+      "action": "CERTIFICATE_DRAFT_CREATED",
+      "details": "Created draft certificate CER-837731-750 for roll number 231P019",
+      "userId": "946b8d4c-02d3-4145-8beb-5942921a9523",
+      "certificateId": "273a0bf2-22db-4be4-a84a-16e2be43a721"
+    },
+    {
+      "id": "8cd5066f-1baf-4c23-bd28-91c9f139f648",
+      "createdAt": "2026-07-31T08:17:46.444Z",
+      "updatedAt": "2026-07-31T08:17:46.444Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: hod.cse@rcoe.edu",
+      "userId": "f15a9cbc-42f0-4358-919e-edc238561b1f",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "da87a59b-1e1e-4293-a91b-bb6f03ec9b10",
+      "createdAt": "2026-07-31T08:23:37.253Z",
+      "updatedAt": "2026-07-31T08:23:37.253Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: superadmin@certichain.com",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "dc2bf77f-90af-4a79-9eff-8e657bd4bbca",
+      "createdAt": "2026-07-31T08:24:17.422Z",
+      "updatedAt": "2026-07-31T08:24:17.422Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: admin.rcoe@certichain.com",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "f784b6e3-77cc-4c6a-b65f-85ef91728a90",
+      "createdAt": "2026-07-31T08:24:55.556Z",
+      "updatedAt": "2026-07-31T08:24:55.556Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: hod.cse@rcoe.edu",
+      "userId": "f15a9cbc-42f0-4358-919e-edc238561b1f",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "df09172b-1097-450c-8326-687c680bbca8",
+      "createdAt": "2026-07-31T08:25:59.889Z",
+      "updatedAt": "2026-07-31T08:25:59.889Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: admin@cit.edu",
+      "userId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "c403ef18-58bf-480a-ba1c-2393120b0db9",
+      "createdAt": "2026-07-31T08:26:14.155Z",
+      "updatedAt": "2026-07-31T08:26:14.155Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: superadmin@certichain.com",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "d77e0b11-494d-4be3-8f65-d89b807ca11b",
+      "createdAt": "2026-07-31T08:26:41.431Z",
+      "updatedAt": "2026-07-31T08:26:41.431Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: shubham@rcoe.edu",
+      "userId": "d354aa9f-3615-4973-bf8c-5356263e2024",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "279881da-e013-4286-8fc9-aa18fcebf355",
+      "createdAt": "2026-07-31T08:27:30.015Z",
+      "updatedAt": "2026-07-31T08:27:30.015Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: admin.rcoe@certichain.com",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "4ce1aa7d-71c5-460e-bed7-2cb4f5d7223d",
+      "createdAt": "2026-07-31T08:34:13.488Z",
+      "updatedAt": "2026-07-31T08:34:13.488Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: admin.rcoe@certichain.com",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "bd385888-3692-44fc-a232-00cc7d5b2a31",
+      "createdAt": "2026-07-31T08:40:50.782Z",
+      "updatedAt": "2026-07-31T08:40:50.782Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: superadmin@certichain.com",
+      "userId": "5c198549-7178-47ea-90e4-fb5a610ac552",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "8f2d63b7-5894-41a3-b539-35bd02d9b9be",
+      "createdAt": "2026-07-31T08:41:25.109Z",
+      "updatedAt": "2026-07-31T08:41:25.109Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: hod.cse@rcoe.edu",
+      "userId": "f15a9cbc-42f0-4358-919e-edc238561b1f",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "6359fa64-9a8f-4ed7-aa61-2c41129eeca8",
+      "createdAt": "2026-07-31T08:42:21.404Z",
+      "updatedAt": "2026-07-31T08:42:21.404Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: admin.rcoe@certichain.com",
+      "userId": "d6b81af2-b0e3-445d-8658-9cdcc1a4991b",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "b2eea7b9-34f7-4105-8757-f27ceb6e2344",
+      "createdAt": "2026-07-31T08:45:26.915Z",
+      "updatedAt": "2026-07-31T08:45:26.915Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: faculty.cse@cit.edu",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "91d2addb-45ac-4d46-8130-06baab28f961",
+      "createdAt": "2026-07-31T08:52:43.386Z",
+      "updatedAt": "2026-07-31T08:52:43.386Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: student@cit.edu",
+      "userId": "ad715332-4887-4819-9d5c-174e20b01d6e",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "6545d46f-db01-4781-ba50-dea3eff17ea2",
+      "createdAt": "2026-07-31T08:53:02.439Z",
+      "updatedAt": "2026-07-31T08:53:02.439Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: faculty.cse@cit.edu",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "78d5750e-bf8b-493d-9c8f-90f7f44d3bac",
+      "createdAt": "2026-07-31T08:53:25.567Z",
+      "updatedAt": "2026-07-31T08:53:25.567Z",
+      "action": "CERTIFICATE_DRAFT_CREATED",
+      "details": "Created draft certificate CER-005562-534 for roll number CIT-CSE-2026-001",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "certificateId": "1f52ce3e-98f4-4455-87ae-4b394ca40cc5"
+    },
+    {
+      "id": "ebb70ee1-7a55-4cc6-b8c0-3331d2060502",
+      "createdAt": "2026-07-31T09:03:08.529Z",
+      "updatedAt": "2026-07-31T09:03:08.529Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: hod.cse@cit.edu",
+      "userId": "1b2d429f-5a9d-479b-a97c-497edcfacc85",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "c16d2f2e-0807-458f-8428-6aa131d5fca0",
+      "createdAt": "2026-07-31T09:03:19.550Z",
+      "updatedAt": "2026-07-31T09:03:19.550Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: admin@cit.edu",
+      "userId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "a52d73d1-0883-458f-8178-eb4cfceee511",
+      "createdAt": "2026-07-31T09:03:37.650Z",
+      "updatedAt": "2026-07-31T09:03:37.650Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: admin@cit.edu",
+      "userId": "3fd3f7ad-d714-4ee7-9788-d5dccd5b1cf8",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "eeb64a43-8476-49e7-92f1-e1331ca3ae1c",
+      "createdAt": "2026-07-31T09:09:26.795Z",
+      "updatedAt": "2026-07-31T09:09:26.796Z",
+      "action": "USER_LOGIN",
+      "details": "Successful login for email: faculty.cse@cit.edu",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "7fc4845c-b50c-48f7-b8fd-574b0304bfb8",
+      "createdAt": "2026-07-31T09:41:13.860Z",
+      "updatedAt": "2026-07-31T09:41:13.860Z",
+      "action": "BLOCKCHAIN_CERTIFICATE_ISSUED",
+      "details": "Certificate CER-005562-534 successfully anchored on-chain. Tx: 0x2be7c33820afceeeb7acd18671b10a01e4b6ef92eff568256ddcde2521591478",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "certificateId": "1f52ce3e-98f4-4455-87ae-4b394ca40cc5"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "d95779d5-fdb9-4498-95e4-c5c85117499c",
+      "createdAt": "2026-07-31T08:17:54.101Z",
+      "updatedAt": "2026-07-31T08:17:54.101Z",
+      "userId": "946b8d4c-02d3-4145-8beb-5942921a9523",
+      "title": "Certificate HOD Approved",
+      "message": "Certificate CER-837731-750 was approved by HOD. Pending Principal approval.",
+      "type": "SUCCESS"
+    },
+    {
+      "id": "c5d59672-95a0-4f38-aefc-5bc3e46a9fc3",
+      "createdAt": "2026-07-31T08:42:34.999Z",
+      "updatedAt": "2026-07-31T08:42:34.999Z",
+      "userId": "946b8d4c-02d3-4145-8beb-5942921a9523",
+      "title": "Certificate Principal Approved",
+      "message": "Certificate CER-837731-750 was approved by Principal. Ready for blockchain issuance!",
+      "type": "SUCCESS"
+    },
+    {
+      "id": "9e7431bb-57d7-45c6-b615-40317ee531e5",
+      "createdAt": "2026-07-31T09:03:13.332Z",
+      "updatedAt": "2026-07-31T09:03:13.332Z",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "title": "Certificate HOD Approved",
+      "message": "Certificate CER-005562-534 was approved by HOD. Pending Principal approval.",
+      "type": "SUCCESS"
+    },
+    {
+      "id": "5514f8fd-db2c-4b5d-977b-367d727856d2",
+      "createdAt": "2026-07-31T09:03:22.834Z",
+      "updatedAt": "2026-07-31T09:03:22.834Z",
+      "userId": "684ce80f-d12b-4616-9b7e-081152bfb57a",
+      "title": "Certificate Principal Approved",
+      "message": "Certificate CER-005562-534 was approved by Principal. Ready for blockchain issuance!",
+      "type": "SUCCESS"
+    },
+    {
+      "id": "c4f87008-dbf9-4384-be38-b548933e723f",
+      "createdAt": "2026-07-31T09:41:13.861Z",
+      "updatedAt": "2026-07-31T09:41:13.861Z",
+      "userId": "ad715332-4887-4819-9d5c-174e20b01d6e",
+      "title": "Certificate Issued!",
+      "message": "Your certificate CER-005562-534 has been secured on the blockchain and is ready for download.",
+      "type": "SUCCESS"
+    }
+  ]
+}

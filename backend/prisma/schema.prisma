@@ -1,0 +1,186 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id                      String                   @id @default(uuid())
+  email                   String                   @unique
+  passwordHash            String
+  name                    String
+  role                    String                   // "SUPER_ADMIN", "INSTITUTE_ADMIN", "HOD", "FACULTY", "STUDENT"
+  status                  String                   @default("ACTIVE") // "ACTIVE", "INACTIVE"
+  instituteId             String?
+  institute               Institute?               @relation(fields: [instituteId], references: [id])
+  departmentId            String?
+  department              Department?              @relation(fields: [departmentId], references: [id])
+  student                 Student?
+  createdAt               DateTime                 @default(now())
+  updatedAt               DateTime                 @updatedAt
+  applicationTransactions ApplicationTransaction[]
+  auditLogs               AuditLog[]
+  notifications           Notification[]
+}
+
+model Institute {
+  id          String       @id @default(uuid())
+  name        String
+  code        String       @unique
+  logoUrl     String?
+  status      String       @default("ACTIVE")
+  users       User[]
+  departments Department[]
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+model Department {
+  id          String     @id @default(uuid())
+  name        String
+  code        String
+  instituteId String
+  institute   Institute  @relation(fields: [instituteId], references: [id])
+  users       User[]
+  students    Student[]
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  @@unique([instituteId, code])
+}
+
+model Student {
+  id             String        @id @default(uuid())
+  rollNumber     String        @unique
+  userId         String        @unique
+  user           User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  departmentId   String
+  department     Department    @relation(fields: [departmentId], references: [id])
+  enrollmentDate DateTime      @default(now())
+  walletAddress  String?
+  certificates   Certificate[]
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+}
+
+model Certificate {
+  id                  String               @id @default(uuid())
+  certificateId       String               @unique // Business ID e.g., CERT-123456
+  currentVersion      Int                  @default(1)
+  status              String               @default("DRAFT") // "DRAFT", "SUBMITTED", "HOD_APPROVED", "PRINCIPAL_APPROVED", "ISSUED", "REVOKED"
+  studentId           String
+  student             Student              @relation(fields: [studentId], references: [id])
+  issuerId            String?              // Faculty who drafted it
+  hodId               String?              // HOD who approved it
+  principalId         String?              // Principal/Admin who approved it
+  createdAt           DateTime             @default(now())
+  updatedAt           DateTime             @updatedAt
+  versions            CertificateVersion[]
+  approvals           Approval[]
+  verificationLogs    VerificationLog[]
+  blockchainTxs       BlockchainTransaction[]
+  auditLogs           AuditLog[]
+}
+
+model CertificateVersion {
+  id             String                  @id @default(uuid())
+  certificateId  String
+  certificate    Certificate             @relation(fields: [certificateId], references: [id], onDelete: Cascade)
+  versionNumber  Int
+  pdfHash        String                  @unique // SHA-256
+  ipfsCID        String
+  issueDate      DateTime                @default(now())
+  txHash         String?
+  blockNumber    Int?
+  gasUsed        String?
+  walletAddress  String?
+  status         String                  @default("ISSUED") // "ISSUED", "REVOKED"
+  studentName    String
+  studentRollNo  String
+  courseName     String
+  grade          String
+  remarks        String?
+  createdById    String
+  createdAt      DateTime                @default(now())
+  verificationLogs VerificationLog[]
+  blockchainTxs   BlockchainTransaction[]
+}
+
+model Approval {
+  id            String      @id @default(uuid())
+  certificateId String
+  certificate   Certificate @relation(fields: [certificateId], references: [id], onDelete: Cascade)
+  stage         String      // "HOD", "PRINCIPAL"
+  status        String      // "PENDING", "APPROVED", "REJECTED"
+  actionById    String
+  comments      String?
+  createdAt     DateTime    @default(now())
+}
+
+model VerificationLog {
+  id                   String              @id @default(uuid())
+  certificateId        String?
+  certificate          Certificate?        @relation(fields: [certificateId], references: [id])
+  certificateVersionId String?
+  certificateVersion   CertificateVersion? @relation(fields: [certificateVersionId], references: [id])
+  verifierName         String              @default("Public Verifier")
+  ipAddress            String?
+  result               String              // "VALID", "INVALID", "REVOKED"
+  verificationMethod   String              // "QR", "ID", "HASH", "PDF_UPLOAD", "ROLL_NUMBER"
+  txHashChecked        String?
+  verifiedAt           DateTime            @default(now())
+}
+
+model BlockchainTransaction {
+  id                   String              @id @default(uuid())
+  txHash               String              @unique
+  action               String              // "ISSUE", "REVOKE", "REISSUE"
+  blockNumber          Int?
+  gasUsed              String?
+  status               String              // "PENDING", "SUCCESS", "FAILED"
+  walletAddress        String
+  certificateId        String
+  certificate          Certificate         @relation(fields: [certificateId], references: [id])
+  certificateVersionId String
+  certificateVersion   CertificateVersion  @relation(fields: [certificateVersionId], references: [id])
+  timestamp            DateTime            @default(now())
+  createdAt            DateTime            @default(now())
+}
+
+model ApplicationTransaction {
+  id        String   @id @default(uuid())
+  action    String   // "LOGIN", "LOGOUT", "CERTIFICATE_CREATED", "APPROVAL", "VERIFICATION", "DOWNLOAD", "UPDATE", "DELETE"
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  status    String   // "SUCCESS", "FAILED"
+  details   String?
+  ipAddress String?
+  createdAt DateTime @default(now())
+}
+
+model AuditLog {
+  id            String       @id @default(uuid())
+  timestamp     DateTime     @default(now())
+  action        String
+  details       String?
+  userId        String?
+  user          User?        @relation(fields: [userId], references: [id])
+  certificateId String?
+  certificate   Certificate? @relation(fields: [certificateId], references: [id])
+  ipAddress     String?
+  createdAt     DateTime     @default(now())
+}
+
+model Notification {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  title     String
+  message   String
+  isRead    Boolean  @default(false)
+  type      String   // "INFO", "SUCCESS", "WARNING", "DANGER"
+  createdAt DateTime @default(now())
+}
